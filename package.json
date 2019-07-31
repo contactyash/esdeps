@@ -1,0 +1,8 @@
+{
+  "name":"my-eslint-deps",
+  "version":"1.0.0",
+  "bin":"./index.js",
+   "dependencies": {
+      "shelljs":"0.8.3"
+  }
+}
