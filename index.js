@@ -3,7 +3,7 @@ var shell = require('shelljs');
 const fs = require("fs");
 var fs = require('fs');
  
-fs.readFile('DATA', 'utf8', function(err, contents) {
+fs.readFile('.eslintrc', 'utf8', function(err, contents) {
     console.log(contents);
 });
 // fs.copyFile("eslintrc.js", ".eslintrc", err => {
