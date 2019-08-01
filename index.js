@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 var shell = require('shelljs');
 const fs = require("fs");
-var fs = require('fs');
  
 fs.readFile('.eslintrc', 'utf8', function(err, contents) {
     console.log(contents);
