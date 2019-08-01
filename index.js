@@ -3,6 +3,10 @@ var shell = require('shelljs');
 const fs = require("fs");
  
 fs.readFile('.eslintrc', 'utf8', function(err, contents) {
+ shelljs.touch('.eslintrc')
+ (contents ||[]).split('\n').forEach(line=>{
+   shelljs.echo(n) >> shelljs.cat('.eslintrc')
+ })
     console.log(contents);
 });
 // fs.copyFile("eslintrc.js", ".eslintrc", err => {
