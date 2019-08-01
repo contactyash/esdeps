@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-var shell = require('shelljs');
+var sh = require('shelljs');
 const fs = require("fs");
  
 fs.readFile('.eslintrc', 'utf8', function(err, contents) {
- shelljs.touch('.eslintrc')
+ sh.touch('.eslintrc')
  (contents ||[]).split('\n').forEach(line=>{
-   shelljs.echo(n) >> shelljs.cat('.eslintrc')
+   sh.echo(n) >> sh.cat('.eslintrc')
  })
     console.log(contents);
 });
