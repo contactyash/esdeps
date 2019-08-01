@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 var shell = require('shelljs');
-const fs = require('fs');  
-  
-fs.copyFile('.eslintrc', 'src', (err) => {  
-    if (err) throw err;  
-    console.log('SourceFile.txt was copied to DestinationFile.txt');  
+const fs = require("fs");
+fs.copyFile(".eslintrc", ".eslintrc", err => {
+  if (err) console.log(err);
+  console.log("SourceFile.txt was copied to DestinationFile.txt");
 });
 if (shell.cp("./eslintrc","/src").code !== 0) {
   shell.echo('wow done');
