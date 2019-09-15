@@ -2,8 +2,8 @@
 var sh = require("shelljs");
 const fs = require("fs");
 const path = require("path");
-const eslintConfigs = JSON.parse(fs.readFileSync(path.resolve(__dirname,'./',".eslintrc",)));
-fs.writeFile(".eslintrc",JSON.stringify(eslintConfigs), (err, res) => {
+const eslintConfigs = fs.readFileSync(path.resolve(__dirname,'./',".eslintrc",));
+fs.writeFile(".eslintrc",eslintConfigs, (err, res) => {
   if (err) {
     console.log(err, "error");
   }
