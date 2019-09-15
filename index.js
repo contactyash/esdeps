@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 var sh = require("shelljs");
 const fs = require("fs");
-const eslintConfigs = require("./eslintrc.js")
-fs.writeFile("eslintrc.js",JSON.stringify(eslintConfigs), (err, res) => {
+const path = require("path");
+const eslintConfigs = path.resolve("eslintrc.js");
+console.log(eslintConfigs)
+fs.writeFile("eslintrc.js","do able", (err, res) => {
   if (err) {
     console.log(err, "error");
   }
